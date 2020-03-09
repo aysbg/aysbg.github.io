@@ -1,0 +1,38 @@
+/*********************************************************************************
+
+	Template Name: Template Full Name Here
+	Description: A perfect template to build beautiful and unique medical websites. It comes with nice and clean design.
+	Version: 1.0
+
+	Note: This is custom css.
+
+**********************************************************************************/
+.logo .text {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	color: #222222;
+	vertical-align: bottom;
+}
+
+.header-default .header__wrapper .header-left .logo a img,
+.header-default.headroom--not-top .header__wrapper .header-left .logo a img {
+	width: 50px !important;
+	margin-right: 10px;
+	margin-top: -25px;
+	padding: 0;
+}
+
+@media only screen and (max-width: 575px) {
+	.header-default .header__wrapper .header-left {
+		flex-basis: 100%;
+	}
+
+	.header-default .header__wrapper .header-left .logo {
+		padding: 35px 0 25px;
+	}
+
+	.header-default .header__wrapper .header-right {
+		display: none;
+	}
+}
