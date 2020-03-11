@@ -603,7 +603,7 @@
                           </div>
 
                           <div class="col-lg-12 mt--30">
-                            <input type="submit" value="Submit message">
+                            <input type="button" id="sendEmail" value="Submit message">
                             <p class="form-messege"></p>
                           </div>
                         </div>
@@ -733,6 +733,24 @@
   <script src="js/revolution.extension.slideanims.min.js"></script>
   <script src="js/revolution.extension.video.min.js"></script>
   <script src="js/revoulation.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    document.getElementById('#sendEmail').addEventListener('click', function(event) {
+      Email.send({
+        Host: "smtp.yourisp.com",
+        Username: "username",
+        Password: "password",
+        To: 'projects@codefactory.me',
+        From: "you@isp.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+      }).then(message => {
+        console.log(message);
+        alert('Email sent successfully.');
+      });
+    });
+  </script>
 </body>
 
 </html>
