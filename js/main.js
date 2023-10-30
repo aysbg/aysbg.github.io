@@ -57,6 +57,7 @@
         48. Scroll Revealm
         49. Svg Icon Draw
         50. Snowfall
+        51. One Page Nav
 	
 	__ END MAIN JS INDEXING
 
@@ -387,7 +388,7 @@
             });
 
             // Updating the sliders in tab
-            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('a[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
                 $elementCarousel.slick('setPosition');
             });
         }
@@ -1222,7 +1223,7 @@
         $('.audio-list-tab').on('click', 'a', function () {
             var $this = $(this),
                 $imageSrc = $this.data('image');
-            $this.closest('.brook-coustom-audio-player-area').css('background-image', `url(${$imageSrc})`);
+            $this.closest('.brook-coustom-audio-player-area').css('background-image', 'url('+ $imageSrc + ')');
         })
 
         $(".audio-track-area").each(function(index, el) {
@@ -1294,6 +1295,22 @@
     ====================================*/
         document.className  = "darkBg";
         $('.christmas-snow').snowfall({image :"img/flake.png", minSize: 10, maxSize:32});
+
+
+    /*===================================
+        51. One Page Nav
+    ====================================*/
+    $('.page_nav .onePageNavi').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing',
+        offsetHeight: 80,
+    });
+
+    
 
     // Map JS
     //     var data = [{
