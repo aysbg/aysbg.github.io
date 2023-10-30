@@ -7,38 +7,3 @@
 	Note: This is custom css.
 
 **********************************************************************************/
-.logo .text {
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 1;
-	color: #222222;
-	vertical-align: bottom;
-}
-
-.header-default .header__wrapper .header-left .logo a img,
-.header-default.headroom--not-top .header__wrapper .header-left .logo a img {
-	width: 50px !important;
-	margin-right: 10px;
-	margin-top: -25px;
-	padding: 0;
-}
-
-@media only screen and (max-width: 1100px) {
-	.header-default .header__wrapper .header-left {
-		flex-basis: 25%;
-	}
-}
-
-@media only screen and (max-width: 852px) {
-	.header-default .header__wrapper .header-left {
-		flex-basis: 100%;
-	}
-
-	.header-default .header__wrapper .header-left .logo {
-		padding: 40px 0;
-	}
-
-	.header-default .header__wrapper .header-right {
-		display: none;
-	}
-}

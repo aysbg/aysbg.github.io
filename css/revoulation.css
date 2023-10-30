@@ -36,7 +36,7 @@ website:   	http://www.themepunch.com
     z-index: 1
 }
 #rev_slider_1_1 .tp-caption{
-    font-family:  'louis_george_caferegular';
+    font-family:  $heading-font;
 }
 
 #rev_slider_1_1 h6.tp-caption {
@@ -76,7 +76,7 @@ website:   	http://www.themepunch.com
 =================================*/
 
 #rev_slider_2_1 .tp-caption{
-    font-family: 'louis_george_caferegular';
+    font-family: $heading-font;
 }
 
 #rev_slider_2_1 .tp-caption.rev-btn{
@@ -325,7 +325,7 @@ website:   	http://www.themepunch.com
 =================================*/
 
 #rev_slider_8_1 .tp-caption{
-    font-family: 'louis_george_caferegular';
+    font-family: $heading-font;
 }
 
 #rev_slider_8_1 .tp-caption.body-font{
